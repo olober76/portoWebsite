@@ -7,13 +7,16 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 p {
   color: rgb(85, 85, 85);
@@ -27,19 +30,15 @@ a,
 }
 
 /* DESKTOP NAV */
-
-nav,
-.nav-links {
-  display: flex;
-}
-
 nav {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 17vh;
 }
 
 .nav-links {
+  display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -70,6 +69,8 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  background: transparent;
+  
 }
 
 .hamburger-menu {
@@ -154,10 +155,12 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  
 }
 
 .section-container {
   display: flex;
+  
 }
 
 /* PROFILE SECTION */
@@ -167,7 +170,17 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh area */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  width: 100%; /* Ensure the section spans the entire width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  
 }
+
 
 .section__pic-container {
   display: flex;
@@ -387,6 +400,14 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh area */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  width: 100%; /* Ensure the section spans the entire width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-info-upper-container {
